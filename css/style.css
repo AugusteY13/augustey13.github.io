@@ -178,6 +178,7 @@ span {
 .home-content p {
     font-size: 1.8rem;
     font-weight: 500;
+    text-align: justify;
 }
 
 .social-icon a {
@@ -257,20 +258,11 @@ span {
 }
 
 @keyframes words {
-    0%, 20% {
+    0%, 50% {
         content: 'Développeur Passioné';
     }
-    21%, 40% {
+    51%, 100% {
         content: 'Modérateur Discord';
-    }
-    41%, 60% {
-        content: 'Développeur Web';
-    }
-    61%, 80% {
-        content: 'Créateur de Contenu';
-    }
-    81%, 100% {
-        content: 'Tiktokeur';
     }
 }
 
@@ -332,7 +324,7 @@ span {
 
 .service-box {
     background-color: var(--main-color);
-    height: 350px;
+    height: 250px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -356,16 +348,15 @@ span {
 }
 
 .service-info h4 {
-    margin-top: auto;
     font-size: 2.5rem;
     font-weight: 500;
 }
 
 .service-info p {
+    margin-top: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
     max-height: 100px;
-    margin: auto;
 }
 
 @media (max-width:991px) {
