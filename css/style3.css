@@ -1,1 +1,44 @@
+:root {
+    --bg-color: #191117;
+    --second-bg-color: #21121D;
+    --text-color: #FDD1EA;
+    --main-color: #692955;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item {
+    border: 2px solid #ddd;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
 
