@@ -10,12 +10,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*ROOT*/
+
 :root {
     --bg-color: #191117;
     --second-bg-color: #21121D;
     --text-color: #FDD1EA;
     --main-color: #692955;
 }
+
+.light-theme {
+    --bg-color: #FDD1EA;
+    --second-bg-color: #E8C7D9;
+    --text-color: #191117;
+    --main-color: #692955;
+}
+
+/*HTML*/
 
 html {
     font-size: 62.5%;
@@ -33,6 +44,8 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background: var(--main-color);
 }
+
+/*BODY*/
 
 body {
     background: var(--bg-color);
@@ -129,10 +142,108 @@ body {
     }
 }
 
+/*SWITCH*/
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2.2em;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2a2a2a;
+    transition: 0.4s;
+    border-radius: 30px;
+    overflow: hidden;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 20px;
+    left: 0.5em;
+    bottom: 0.5em;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.81, -0.04, 0.38, 1.5);
+    box-shadow: inset 8px -4px 0px 0px #fff;
+}
+  
+.switch input:checked + .slider {
+    background-color: #00a6ff;
+}
+  
+.switch input:checked + .slider:before {
+    transform: translateX(1.8em);
+    box-shadow: inset 15px -4px 0px 15px #ffcf48;
+}
+  
+.star {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 5px;
+    transition: all 0.4s;
+    height: 5px;
+}
+  
+.star_1 {
+    left: 2.5em;
+    top: 0.5em;
+}
+  
+.star_2 {
+    left: 2.2em;
+    top: 1.2em;
+}
+  
+.star_3 {
+    left: 3em;
+    top: 0.9em;
+}
+  
+.switch input:checked ~ .slider .star {
+    opacity: 0;
+}
+  
+.cloud {
+    width: 3.5em;
+    position: absolute;
+    bottom: -1.4em;
+    left: -1.1em;
+    opacity: 0;
+    transition: all 0.4s;
+}
+  
+.switch input:checked ~ .slider .cloud {
+    opacity: 1;
+}
+
+/*SECTION*/
+
 section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
+
+/*HOME*/
 
 .home {
     display: flex;
@@ -258,12 +369,19 @@ span {
 }
 
 @keyframes words {
-    0%, 50% {
+    0%, 25% {
         content: 'Développeur Passioné';
     }
-    51%, 100% {
+    26%, 50% {
         content: 'Modérateur Discord';
     }
+    51%, 75% {
+        content: 'Responsable Com';
+    }
+    76%, 100% {
+        content: 'Monteur Vidéo';
+    }
+
 }
 
 @keyframes typing {
@@ -304,6 +422,8 @@ span {
         margin-top: 4rem;
     }
 }
+
+/*SERVICES*/
 
 .services {
     background: var(--second-bg-color);
@@ -377,6 +497,8 @@ span {
     }
 }
 
+/*SKILLS*/
+
 .skills {
     background: var(--bg-color);
 }
@@ -447,7 +569,209 @@ span {
     }
 }
 
-.project-picture {
+/*PROJECT*/
+
+.card {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.front-side, .back-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.front-side {
+    background: #DE51A8;
+    transform: rotateY(0deg);
+}
+
+.back-side {
+    background: #4B143D;
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front-side p {
+    margin: 10px 0;
+    max-width: 90%;
+}
+
+.back-side h4 {
+    text-decoration: underline;
+    margin: 10px 0;
+    max-width: 90%;
+}
+
+.back-side p {
+    margin: 10px 0;
+    max-width: 90%;
+}
+
+/*REALISATIONS*/
+
+.realisations {
+    background: var(--second-bg-color);
+}
+
+.heading {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.realisations-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.realisation-box {
+    background-color: var(--main-color);
+    height: 500px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.realisation-box:hover {
+    background: transparent;
+    color: var(--text-color);
+    transform: scale(1.03);
+    border: 1px solid var(--main-color);
+}
+
+.realisation-box .realisation-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+.realisation-info h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.realisation-info p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-height: 100px;
+}
+
+/*CODES*/
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#userInput {
+    padding: 12px 20px;
+    font-size: 1.6rem;
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    width: 250px; /* You can adjust this value */
+    margin-right: 10px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#userInput:focus {
+    border-color: var(--second-bg-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--second-bg-color);
+    transform: scale(1.05);
+}
+
+input, button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width:991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .realisations {
+        padding-bottom: 7rem;
+    }
+}
+
+@media (max-width:895px) {
+    .realisations h2 {
+        margin-bottom: 3rem;
+    }
+    .realisations-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*RESSOURCES*/
+
+.codes h2 {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.codes p {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.codes .btn {
+    color: white;
+    width: 60%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*CONTACT*/
+
+.contact-picture {
     width: 100%;
     height: 500px;
     background-image: url("../img/beach.jpg");
@@ -459,48 +783,39 @@ span {
     cursor: pointer;
 }
 
-.project-info {
+.contact-info {
+    display: flex;
     width: 100%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
     border-radius: 5px;
 }
 
-.project-text {
+.contact-text {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     margin: 10px;
-}
-
-.project-text h3 {
-    font-size: 5rem;
-}
-
-.project-text p {
-    font-size: 1.8rem;
-    text-align: justify;
-}
-
-.contact h2 {
-    margin-bottom: 3rem;
-    color: white;
-}
-
-.contact p {
-    font-size: 2rem;
-    font-weight: 500;
     text-align: center;
-    margin-bottom: 5rem;
 }
 
-.contact .btn {
-    width: 60%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: center;
+.contact-text h3 {
+    font-size: 3rem;
 }
+
+.contact-text p {
+    font-size: 1.8rem;
+    margin-top: 20px; 
+}
+
+.contact-text a {
+    margin-top: 20px
+}
+
+/*FOOTER*/
 
 .footer {
     position: relative;
@@ -515,6 +830,19 @@ span {
     text-align: center;
     font-size: 16px;
     color: black;
+}
+
+.footer h1 {
+    font-size: 280px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/title.jpg");
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (max-width:1285px) {
