@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#692955">
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="website icon" type="jpg", href="img/logo.png"/>
@@ -25,6 +26,22 @@
 
             <a href="#" class="logo">Augustus</a>
 
+            <label class="switch" >
+                <input checked="true" id="checkbox" type="checkbox" />
+                <span class="slider">
+                <div class="star star_1"></div>
+                <div class="star star_2"></div>
+                <div class="star star_3"></div>
+                <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                    <path
+                    transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                    fill="#fff"
+                    d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                    ></path>
+                </svg>
+                </span>
+            </label>
+            
             <i class="fa-solid fa-bars" id="menu-icon"></i>
 
             <nav class="navbar">
@@ -32,13 +49,21 @@
                 <a href="#services">Services</a>
                 <a href="#skills">Compétences</a>
                 <a href="#project">Projet</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#codes">Ressources</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+            <script>
+                document.getElementById("checkbox").addEventListener("change", function() {
+                    document.body.classList.toggle("light-theme", this.checked);
+                });
+            </script>            
 
         </header>
 
         <div class="link">
-            <a href="https://discord.com/invite/aQ9gerx5Pn"><img src="img/link.jpg" alt=""></a>
+            <a href="https://discord.com/invite/FJjUsfqaXC" target="_blank"><img src="img/link.jpg" alt=""></a>
         </div>
 
         <section class="home" id="home">
@@ -51,12 +76,12 @@
 
                 <h1>Salut, c'est <span>Augustus</span></h1>
                 <h3 class="typing-text">Je suis un <span></span></h3>
-                <p>
-                    Cela fait 2 ans que j'ai réellement débuté la programmation avec le langage Python. J'ai commencé en effectuant des exercices pour mes études puis c'est devenu, au fur et à mesure, une passion. Je veux toujours aller plus loin, c'est pour cette raison que je suis enthousiaste à l'idée de vous aider à atteindre vos objectifs et vos souhaits en termes de programmation.
-                </p>
+                <p>Cela fait plus 2 ans que j'ai réellement débuté la programmation avec le langage Python. J'ai commencé en effectuant des exercices pour mes études puis c'est devenu, au fur et à mesure, une passion. Je veux toujours aller plus loin, c'est pour cette raison que je suis enthousiaste à l'idée de vous aider à atteindre vos objectifs et vos souhaits en termes de programmation.</p>
 
                 <div class="social-icon">
                     <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
 
             </div>
@@ -173,17 +198,98 @@
 
         <section class="project" id="project">
 
-            <h2 class="heading"><span>Mon</span> plus grand Projet</h2>
+            <h2 class="heading">Projet : <span>Aetherius Legends</span></h2>
 
-            <div class="project-picture">
+            <div class="card">
 
-                <div class="project-info">
+                <div class="front-side">
+                    <p>Aetherius Legends est un jeu Gacha jouable uniquement sur mon serveur Discord.</p>
+                    <p>Le but de collectionner les différentes Cartes disponibles, d'affronter les autres joueurs dans des combats stratégiques et plus encore ! Le cartes de base sont des Waifus mais il est possible de les changer.</p>
+                </div>
 
-                    <div class="project-text">
+                <div class="back-side">
+                    <h4>Créateur de Héros</h4>
+                    <p>Créer le Héros de vos rêves afin de bien commencer l'aventure.</p>
+                    <h4>Collection de Cartes</h4>
+                    <p>Rassemblez la dizaine de Cartes disponibles et composez l'équipe ultime.</p>
+                    <h4>Profil Interactif</h4>
+                    <p>Gérez votre Héros, votre collection, vos comptes et vos statistiques au même endroit.</p>
+                    <h4>Combats Dynamiques</h4>
+                    <p>Défier et affronter d'autres joueurs dans des combats tour pour tour automatique.</p>
+                </div>
 
-                        <h3>Aetherius Legends</h3>
-                        <p>Aetherius Legends est un jeu Gacha sur Discord en cours de développement.</p>
-                        <p>Le but de collectionner les différentes Cartes disponibles, d'affronter les autres joueurs dans des combats stratégiques et plus encore !</p>
+            </div>
+
+        </section>
+
+        <section class="realisations" id="realisations">
+
+            <h2 class="heading">Réalisations</h2>
+
+            <div class="realisations-container">
+
+                <div class="realisation-box">
+                    <div class="realisation-info">
+                        <h4>Havre de Paix</h4>
+                        <p><u>Havre de Paix</u> est le serveur Discord que vous rejoignez si vous souhaitez me contacter. Il a été créé de A à Z par mes soins. Il rassemble la majorité de mon savoir-faire.</p>
+                    </div>
+                </div>
+
+                <div class="realisation-box">
+                    <div class="realisation-info">
+                        <h4>Server Designer</h4>
+                        <p><u>Server Designer</u> est un bot Discord qui vous permet de créer le serveur Discord de vos envies en quelques instants.</p>
+                    </div>
+                </div>
+
+                <div class="realisation-box">
+                    <div class="realisation-info">
+                        <h4>Aetheria / Hibiscus</h4>
+                        <p><u>Aetheria</u> et <u>Hibiscus</u> sont deux univers imaginés par moi pour un serveur Discord E/RP. <u>Aetheria</u> est une île paradisiaque et <u>Hibiscus</u> est un site de streaming révolutionnaire. Les serveurs relatifs à ces univers ne sont pas encore créés. N'hésitez pas à me contacter si vous souhaitez les créer.</p>
+                    </div>
+                </div>
+
+                <div class="realisation-box">
+                    <div class="realisation-info">
+                        <h4>Registre des Fakes</h4>
+                        <p>Le <u>Registre des Fakes</u> est un mouvement que j'ai mis en place lorsque que je gérais un serveur pour quelqu'un. Il sert à collecter des signalements de fakes afin de ralentir leur progression. Le serveur qui hergeait ce mouvement est supprimé.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="codes" id="codes">
+
+            <h2 class="heading"><span>Ressources Spéciales</span></h2>
+
+            <p>Certaines ressources d'Augustus Production comme les contextes et les différentes fonctionnalités d'Aetheria et de Hibiscus ou encoure du Registre des Fakes sont uniquement accessibles si vous avez le code d'accès relatif.</p>
+            <p>Si vous avez un code, entrez-le dans la barre en dessous et accédez à la ressource.</p>
+            
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="xxx...">
+                <button onclick="rediriger()">Entrer</button>
+            </div>
+            
+            <script src="js/script3.js"></script>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <h2 class="heading">Contactez <span>Moi</span></h2>
+
+            <div class="contact-picture">
+
+                <div class="contact-info">
+
+                    <div class="contact-text">
+
+                        <h3>Rejoignez mon serveur Discord pour en savoir plus sur mes services et discuter de vos besoins particuliers.</h3>
+                        <p>Lorsque vous répondez aux questions du processus d'accueil, veuillez sélectionner "Adepte Spécial" (question 4) pour arriver directement dans le Sas d'entrée.</p>
+
+                        <a href="https://discord.com/invite/FJjUsfqaXC" target="_blank" class="btn">Rejoindre le Serveur</a>
 
                     </div>
 
@@ -193,22 +299,11 @@
 
         </section>
 
-        <section class="contact" id="contact">
-
-            <h2 class="heading">Contactez <span>Moi</span></h2>
-
-            <p>Rejoignez mon serveur Discord pour en savoir plus sur mes services et discuter de vos besoins particuliers.</p>
-
-            <a href="https://discord.com/invite/aQ9gerx5Pn" class="btn">Rejoindre le Serveur</a>
-
-        </section>
-
         <footer class="footer">
 
-            <p class="copyright">
-                © 2024 Augustus Production - Tous droits réservés.
-            </p>
-            
+            <h1>AUGUSTUS</h1>
+            <p class="copyright">© 2024-2025 Augustus Production - Tous droits réservés.</p>
+        
         </footer>
 
         <script src="js/script.js"></script>
