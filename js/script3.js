@@ -6,6 +6,7 @@ function rediriger() {
         "dragon" : "interactive dragon.html",
         "smiley" : "smiley.html",
         "seche" : "seche.html",
+        "noelie" : "happy birtday.html",
         "aetheria" : "https://docs.google.com/document/d/1QtS9tzhbet8Yr-0J8mPBJFF-uzzJFUpUzwMjKH1GnKk/edit?usp=sharing",
         "hibiscus" : "https://docs.google.com/document/d/1F7p4HRatPLGH74AcphkRJdD2rU2XL5ulMONGL43dqRo/edit?usp=sharing",
         "casino" : "https://docs.google.com/document/d/16bmJEaa0GNEs8iXPI0gsoUrysb_4WH0mmymG_c4KAEk/edit?usp=sharing",
