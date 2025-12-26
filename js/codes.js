@@ -6,7 +6,7 @@ function rediriger() {
         "dragon" : "interactive dragon.html",
         "smiley" : "smiley.html",
         "seche" : "seche.html",
-        "fuite" : "fuites.html"
+        "fuites" : "fuites.html"
     };
 
     if (pages[valeur]) {
@@ -15,3 +15,4 @@ function rediriger() {
         alert("Page non trouvée !");
     }
 }
+
