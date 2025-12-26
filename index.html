@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"/>
 
         <title>Augustus Production</title>
 
@@ -25,114 +26,95 @@
         <header class="header">
 
             <a href="#" class="logo">Augustus</a>
-
-            <label class="switch" >
-                <input checked="true" id="checkbox" type="checkbox" />
-                <span class="slider">
-                <div class="star star_1"></div>
-                <div class="star star_2"></div>
-                <div class="star star_3"></div>
-                <svg viewBox="0 0 16 16" class="cloud_1 cloud">
-                    <path
-                    transform="matrix(.77976 0 0 .78395-299.99-418.63)"
-                    fill="#fff"
-                    d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
-                    ></path>
-                </svg>
-                </span>
-            </label>
             
             <i class="fa-solid fa-bars" id="menu-icon"></i>
 
             <nav class="navbar">
-                <a href="#home" class="active">Acceuil</a>
+                <a href="#home" class="active">Accueil</a>
                 <a href="#services">Services</a>
                 <a href="#skills">Compétences</a>
                 <a href="#project">Projet</a>
                 <a href="#realisations">Réalisations</a>
-                <a href="#codes">Ressources</a>
                 <a href="#contact">Contact</a>
             </nav>
 
-            <script>
-                document.getElementById("checkbox").addEventListener("change", function() {
-                    document.body.classList.toggle("light-theme", this.checked);
-                });
-            </script>            
-
         </header>
-
-        <div class="link">
-            <a href="https://discord.com/invite/HnPtmfgZa5" target="_blank"><img src="img/link.jpg" alt=""></a>
-        </div>
 
         <section class="home" id="home">
 
             <div class="home-img">
-                <img src="img/avatar.jpg" alt="avatar">
+                <img src="img/avatar.png" alt="avatar">
             </div>
 
             <div class="home-content">
 
-                <h1>Salut, c'est <span>Augustus</span></h1>
+                <h1><span>Augustus</span> sum !</h1>
                 <h3 class="typing-text">Je suis un <span></span></h3>
-                <p>Cela fait plus 2 ans que j'ai réellement débuté la programmation avec le langage Python. J'ai commencé en effectuant des exercices pour mes études puis c'est devenu, au fur et à mesure, une passion. Je veux toujours aller plus loin, c'est pour cette raison que je suis enthousiaste à l'idée de vous aider à atteindre vos objectifs et vos souhaits en termes de programmation.</p>
+                <p>Développeur Python avec plusieurs années de pratique, j'ai commencé par des projets académiques avant d’approfondir mes compétences à travers des réalisations concrètes. Motivé par l'amélioration continue, je mets mon expertise au service de vos objectifs en programmation.</p>
 
                 <div class="social-icon">
-                    <a href="#"><i class="fa-brands fa-discord"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://discord.com/invite/KpM5TsfM88"><i class="hgi hgi-stroke hgi-discord"></i></a>
+                    <a href="https://github.com/AugusteY13"><i class="hgi hgi-stroke hgi-github"></i></a>
+                    <a href="https://www.wattpad.com/user/AugusteY13"><i class="hgi hgi-stroke hgi-wattpad"></i></a>
+                    <a href="https://buymeacoffee.com/augustey13"><i class="hgi hgi-stroke hgi-coffee-01"></i></a> 
                 </div>
+
+                <div class="input-container">
+                    <input type="text" id="userInput" placeholder="Insérez un code ici...">
+                    <button onclick="rediriger()">Entrer</button>
+                </div>
+                    
+                <script src="js/codes.js"></script>
 
             </div>
 
         </section>
 
-        <section class="services" id="services">
+        <section class="production" id="services">
 
             <h2 class="heading">Services</h2>
 
-            <div class="services-container">
+            <div class="production-container">
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Bots Discord</h4>
-                        <p><u>Je suis capable de développer</u> un bot Discord utilisant les slash commandes et <u>de l'améliorer</u>.</p>
+                        <p>Je suis capable de développer un bot Discord utilisant les slash commandes et de le perfectionner. Je peux aussi le relier à une base de données SQL ou à l'API d'Imgur.</p>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Interfaces Graphiques</h4>
-                        <p><u>Je suis capable de coder</u> des interfaces graphiques avec le module TKinter.</p>
+                        <p>Je suis capable de coder des interfaces graphiques avec TKinter afin de rendre les programmes accessibles à des utilisateurs sans connaissances en informatique.</p>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Serveurs Discord</h4>
-                        <p><u>Je suis capable de créer</u> le serveur Discord de vos rêves de A à Z.</p>
+                        <p>Je suis capable de créer le serveur Discord de vos rêves avec bots, rôles, permissions, webhooks et personnalisation des salons.</p>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Modération</h4>
-                        <p><u>Je suis capable de modérer</u> et aussi <u>d'animer</u> un serveur Discord.</p>
+                        <p>Je suis capable de modérer et aussi d'animer un serveur Discord, quel que soit le thème ou le nombre de membres.</p>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Univers RP</h4>
-                        <p><u>Je suis capable d'inventer</u> un contexte pour un serveur RP et de tout ce qui peu en découler à partir de vos idées.</p>
+                        <p>Je suis capable d'inventer un contexte de jeu de rôle et tout ce qui peut en découler à partir de vos idées. Je peux ensuite l'adapter sous forme de serveur Discord.</p>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>Web Scraping</h4>
-                        <p><u>Je suis capable d'effectuer</u> le Web Scraping d'un site web avec le module BeautifulSoup.</p>
+                <div class="production-box">
+                    <div class="production-info">
+                        <h4>Illustrations IA</h4>
+                        <p>Je suis capable de générer des images sur mesure grâce à des modèles d'intelligence artificielle text-to-image.</p>
                     </div>
                 </div>
 
@@ -152,6 +134,27 @@
                         <div class="info">
                             <img src="img/discord.png">
                             <span>Discord</span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/canva.png">
+                            <span>Canva</span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/pixai.png">
+                            <span>PixAI</span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/capcut.png">
+                            <span>CapCut</span>
                         </div>
                     </div>
 
@@ -198,20 +201,21 @@
 
         <section class="project" id="project">
 
-            <h2 class="heading">Projet : <span>Aetherius Legends</span></h2>
+            <h2 class="heading">Projet <span>Aetherius Legends</span></h2>
 
             <div class="card">
 
                 <div class="front-side">
-                    <p>Aetherius Legends est un jeu Gacha jouable uniquement sur mon serveur Discord.</p>
-                    <p>Le but de collectionner les différentes Cartes disponibles, d'affronter les autres joueurs dans des combats stratégiques et plus encore ! Le cartes de base sont des Waifus mais il est possible de les changer.</p>
+                    <p>Aetherius Legends est un jeu Gacha jouable uniquement sur Discord.</p>
+                    <p>Le but de collectionner les différentes cartes disponibles, d'affronter les autres joueurs dans des combats stratégiques et plus encore !</p>
+                    <p>Le jeu de cartes est entièrement personnalisable.</p>
                 </div>
 
                 <div class="back-side">
                     <h4>Créateur de Héros</h4>
-                    <p>Créer le Héros de vos rêves afin de bien commencer l'aventure.</p>
+                    <p>Créez le héros de vos rêves afin de bien commencer l'aventure.</p>
                     <h4>Collection de Cartes</h4>
-                    <p>Rassemblez la dizaine de Cartes disponibles et composez l'équipe ultime.</p>
+                    <p>Rassemblez la dizaine de cartes disponibles et composez l'équipe ultime.</p>
                     <h4>Profil Interactif</h4>
                     <p>Gérez votre Héros, votre collection, vos comptes et vos statistiques au même endroit.</p>
                     <h4>Combats Dynamiques</h4>
@@ -222,57 +226,55 @@
 
         </section>
 
-        <section class="realisations" id="realisations">
+        <section class="production" id="realisations">
 
             <h2 class="heading">Réalisations</h2>
 
-            <div class="realisations-container">
+            <div class="production-container">
 
-                <div class="realisation-box">
-                    <div class="realisation-info">
-                        <h4>Havre de Paix</h4>
-                        <p><u>Havre de Paix</u> est le serveur Discord que vous rejoignez si vous souhaitez me contacter. Il a été créé de A à Z par mes soins. Il rassemble la majorité de mon savoir-faire.</p>
+                <div class="production-box">
+                    <div class="production-info">
+                        <h4>Villa Orchelia</h4>
+                        <p>Villa Orchelia est un serveur Discord de jeu de rôle conçu intégralement par mes soins, réunissant l'essentiel de mon savoir-faire.</p>
                     </div>
                 </div>
 
-                <div class="realisation-box">
-                    <div class="realisation-info">
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Server Designer</h4>
-                        <p><u>Server Designer</u> est un bot Discord qui vous permet de créer le serveur Discord de vos envies en quelques instants.</p>
+                        <p>Server Designer est un bot Discord permettant de créer automatiquement les éléments d'un serveur Discord (salons, rôles, catégories).</p>
                     </div>
                 </div>
 
-                <div class="realisation-box">
-                    <div class="realisation-info">
-                        <h4>Aetheria / Hibiscus</h4>
-                        <p><u>Aetheria</u> et <u>Hibiscus</u> sont deux univers imaginés par moi pour un serveur Discord E/RP. <u>Aetheria</u> est une île paradisiaque et <u>Hibiscus</u> est un site de streaming révolutionnaire. Les serveurs relatifs à ces univers ne sont pas encore créés. N'hésitez pas à me contacter si vous souhaitez les créer.</p>
+                <div class="production-box">
+                    <div class="production-info">
+                        <h4>KimiBot</h4>
+                        <p>KimiBot est un bot Discord développé pour le jeu de cartes à collectionner d'une amie, permettant la gestion et le tirage des cartes.</p>
                     </div>
                 </div>
 
-                <div class="realisation-box">
-                    <div class="realisation-info">
+                <div class="production-box">
+                    <div class="production-info">
+                        <h4>Univers RP</h4>
+                        <p>Aetheria, Casino et Hibiscus sont trois univers imaginés pour des serveur Discord E/RP. Les serveurs restent à créés ; contactez-moi pour les développer.</p>
+                    </div>
+                </div>
+
+                <div class="production-box">
+                    <div class="production-info">
                         <h4>Registre des Fakes</h4>
-                        <p>Le <u>Registre des Fakes</u> est un mouvement que j'ai mis en place lorsque que je gérais un serveur pour quelqu'un. Il sert à collecter des signalements de fakes afin de ralentir leur progression. Le serveur qui hergeait ce mouvement est supprimé.</p>
+                        <p>Le Registre des Fakes est un système que j’avais mis en place pour collecter les signalements de fakes et limiter leur progression.</p>
+                    </div>
+                </div>
+
+                <div class="production-box">
+                    <div class="production-info">
+                        <h4>Registre des Fakes</h4>
+                        <p>Découvrez les univers RP et le Registre des Fakes en <a href="https://docs.google.com/document/d/1v3VwVNX3wZ5PTqH0j-F0bPPZVCUlj_3jfb4GoCWKQdk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">cliquant ici.</a></p>
                     </div>
                 </div>
 
             </div>
-
-        </section>
-
-        <section class="codes" id="codes">
-
-            <h2 class="heading"><span>Ressources Spéciales</span></h2>
-
-            <p>Certaines ressources d'Augustus Production comme les contextes et les différentes fonctionnalités d'Aetheria et de Hibiscus ou encoure du Registre des Fakes sont uniquement accessibles si vous avez le code d'accès relatif.</p>
-            <p>Si vous avez un code, entrez-le dans la barre en dessous et accédez à la ressource.</p>
-            
-            <div class="input-container">
-                <input type="text" id="userInput" placeholder="xxx...">
-                <button onclick="rediriger()">Entrer</button>
-            </div>
-            
-            <script src="js/script3.js"></script>
 
         </section>
 
@@ -280,32 +282,35 @@
 
             <h2 class="heading">Contactez <span>Moi</span></h2>
 
-            <div class="contact-picture">
-
-                <div class="contact-info">
-
-                    <div class="contact-text">
-
-                        <h3>Rejoignez mon serveur Discord pour en savoir plus sur mes services et discuter de vos besoins particuliers.</h3>
-
-                        <a href="https://discord.com/invite/HnPtmfgZa5" target="_blank" class="btn">Rejoindre le Serveur</a>
-
-                    </div>
-
+            <form id="contactForm">
+                <div class="input-box">
+                    <input type="text" name="Nom" placeholder="Nom" required>
+                    <input type="email" name="Email" placeholder="Adresse mail (abcd123@gmail.com)" required>
+                    <input type="text" name="Pseudo Discord" placeholder="Pseudo Discord (@abcd123)">
+                    <input type="text" name="Objet" placeholder="Objet (Obtenir un bot Discord personnalisé)" required>
                 </div>
+                <textarea name="Message" cols="30" rows="10" placeholder="Corps du message"></textarea>
+                <input type="submit" value="Envoyer le message" class="btn">
+            </form>
 
-            </div>
+            <script src="js/form2discord.js"></script>
 
         </section>
 
         <footer class="footer">
 
-            <h1>AUGUSTUS</h1>
-            <p class="copyright">© 2024-2025 Augustus Production - Tous droits réservés.</p>
-        
+            <ul class="list">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="https://discord.com/invite/KpM5TsfM88" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://discordpy.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Discord.py</a></li>
+                <li><a href="https://pixai.art/" target="_blank" rel="noopener noreferrer">PixAI</a></li>
+                <li><a href="https://docs.google.com/document/d/1v3VwVNX3wZ5PTqH0j-F0bPPZVCUlj_3jfb4GoCWKQdk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Recueil</a></li>
+            </ul>
+            <p class="copyright">© 2024-2026 Augustus Production - Tous droits réservés.</p>
+
         </footer>
 
-        <script src="js/script.js"></script>
+        <script src="js/navbar.js"></script>
         
     </body>
 
