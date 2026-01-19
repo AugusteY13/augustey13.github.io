@@ -381,7 +381,7 @@ input, button {
 
 .production-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -422,6 +422,10 @@ input, button {
     font-weight: 400;
     max-height: 100px;
     margin: auto;
+}
+
+.production-info img {
+    width: 100%;
 }
 
 .production-info a {
