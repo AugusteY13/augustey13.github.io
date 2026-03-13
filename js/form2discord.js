@@ -1,7 +1,7 @@
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const webhookURL = "https://discord.com/api/webhooks/1454110994849861663/5A27ArDyxumz9fAfjTASG19mL1vZfHEe0IsS4RZ4O16C3GKg7C8_GF59RCyM1lT1W-Wz";
+    const webhookURL = "https://discord.com/api/webhooks/1480311332128428104/gO7F7NpQcwGUFQIJrm7AW8Y9fI1ZRLsI9FQpmZA4Brj8GhWH-Oyf9rHdqLtU1v7V_DZx";
 
     const formData = new FormData(e.target);
 
