@@ -5,8 +5,7 @@ function rediriger() {
     let pages = {
         "dragon" : "interactive dragon.html",
         "smiley" : "smiley.html",
-        "seche" : "seche.html",
-        "fuites" : "fuites.html"
+        "seche" : "seche.html"
     };
 
     if (pages[valeur]) {
