@@ -22,196 +22,289 @@
     </head>
 
     <body>
-
+        
         <header class="header">
-
             <a href="#" class="logo">Augustus</a>
-            
             <i class="fa-solid fa-bars" id="menu-icon"></i>
-
             <nav class="navbar">
-                <a href="#home" class="active">Accueil</a>
-                <a href="#services">Services</a>
-                <a href="#skills">Compétences</a>
-                <a href="#bots">Bots</a>
+                <a href="#hero" class="active">Accueil</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#pricing">Offres & Tarifs</a>
+                <a href="#bots">Portfolio</a>
+                <a href="#deroulement">Déroulement</a>
+                <a href="#questions">Questions & Avis</a>
                 <a href="#contact">Contact</a>
             </nav>
-
         </header>
 
         <div class="coffee">
             <a href="https://buymeacoffee.com/augustey13" target="_blank">
-                <img src="img/coffee.png" alt="">
+                <img src="img/coffee.png" alt="coffee">
             </a>
         </div>
 
-        <section class="home" id="home">
-
-            <div class="home-img">
-                <img src="img/avatar.png" alt="avatar">
-            </div>
-
-            <div class="home-content">
-
-                <h1><span>Augustus</span> sum !</h1>
-                <h3 class="typing-text">Je suis un <span></span></h3>
-                <p>Développeur Python avec plusieurs années de pratique, j'ai commencé par des projets académiques avant d’approfondir mes compétences à travers des réalisations concrètes. Motivé par l'amélioration continue, je mets mon expertise au service de vos objectifs en programmation.</p>
-
-                <div class="social-icon">
-                    <a href=""><i class="hgi hgi-stroke hgi-discord"></i></a>
-                    <a href=""><i class="hgi hgi-stroke hgi-tiktok"></i></a>
-                    <a href=""><i class="hgi hgi-stroke hgi-instagram"></i></a>
-                    <a href=""><i class="hgi hgi-stroke hgi-github"></i></a>
-                    <a href=""><i class="hgi hgi-stroke hgi-wattpad"></i></a>
-                    
+        <section class="hero" id="hero">
+            <div class="haut">
+                <div class="haut-text">
+                    <h1>Augustus sum !</h1>
+                    <h2>Développeur Discord</h2>
+                    <p>Vous avez une idée ? Je la transforme en un serveur Discord ou en un bot entièrement personnalisé.</p>
+                    <a href="#pricing">Voir mes offres</a>
                 </div>
-
-                <div class="input-container">
-                    <input type="text" id="userInput" placeholder="Insérez un code ici...">
-                    <button onclick="rediriger()">Entrer</button>
+                <div class="haut-img">
+                    <img src="img/avatar.png"> 
                 </div>
-                    
-                <script src="js/codes.js"></script>
-
             </div>
-
+            <div class="bas">
+                <div class="gauche">
+                    <h2>Derniers Projets</h2>
+                    <div class="art">
+                        <div class="thumb">
+                            <img src="img/pr_lady.png"> 
+                        </div>
+                        <div class="thumb">
+                            <img src="img/pr_aeth.png"> 
+                        </div>
+                    </div>
+                    <a href="#bots" class="btn">Voir Plus</a>
+                </div>
+                <div class="centre">
+                    <h2>Tags</h2>
+                    <div class="chips">
+                        <span>Bots</span>
+                        <span>Automatisation</span>
+                        <span>RP</span>
+                        <span>SQL</span>
+                        <span>API</span>
+                        <span>IA</span>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="info">
+                        <div class="info">
+                            <div class="item">
+                                <div class="num">01</div>
+                                <div class="num-content">
+                                    <h3>Développement sur mesure</h3>
+                                    <p>Chaque projet est conçu selon vos besoins, sans solution préconçue.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="num">02</div>
+                                <div class="num-content">
+                                    <h3>Suivi du projet</h3>
+                                    <p>Une communication claire du premier échange jusqu'à la livraison.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="num">03</div>
+                                <div class="num-content">
+                                    <h3>Support après livraison</h3>
+                                    <p>Une assistance est disponible après la mise en service de votre projet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="production" id="services">
-
-            <h2 class="heading">Services</h2>
-
-            <div class="production-container">
-
-                <div class="production-box">
-                    <div class="production-info">
-                        <h4>Bots Discord</h4>
-                        <p>Je suis capable de développer un bot Discord utilisant les slash commandes et de le perfectionner. Je peux aussi le relier à une base de données SQL ou à l'API d'Imgur.</p>
-                    </div>
-                </div>
-
-                <div class="production-box">
-                    <div class="production-info">
-                        <h4>Interfaces Graphiques</h4>
-                        <p>Je suis capable de coder des interfaces graphiques avec TKinter afin de rendre les programmes accessibles à tous.</p>
-                    </div>
-                </div>
-
-                <div class="production-box">
-                    <div class="production-info">
-                        <h4>Serveurs Discord</h4>
-                        <p>Je suis capable de créer le serveur Discord de vos rêves avec bots, rôles, permissions, webhooks et personnalisation des salons.</p>
-                    </div>
-                </div>
-
-                <div class="production-box">
-                    <div class="production-info">
-                        <h4>Modération</h4>
-                        <p>Je suis capable de modérer et aussi d'animer un serveur Discord, quel que soit le thème ou le nombre de membres.</p>
-                    </div>
-                </div>
-
-                <div class="production-box">
-                    <div class="production-info">
-                        <h4>Univers RP</h4>
-                        <p>Je suis capable d'inventer un contexte de jeu de rôle et tout ce qui peut en découler à partir de vos idées. Je peux ensuite l'adapter sous forme de serveur Discord.</p>
-                    </div>
-                </div>
-
-                <div class="production-box">
-                    <div class="production-info">
-                        <h4>Illustrations IA</h4>
-                        <p>Je suis capable de générer des images sur mesure grâce à des modèles d'intelligence artificielle text-to-image.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="skills" id="skills">
-
-            <h2 class="heading">Compétences</h2>
-
+        <section class="expertise" id="expertise">
+            <h2 class="heading">Expertise</h2>
             <div class="container">
-
                 <div class="row" id="skillsContainer">
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/discord.png">
-                            <span>Discord</span>
-                        </div>
+                        <div class="info"><img src="img/ex_bots.png"><span>Bots Discord</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/canva.png">
-                            <span>Canva</span>
-                        </div>
+                        <div class="info"><img src="img/ex_discord.jpeg"><span>Serveurs Discord</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/pixai.png">
-                            <span>PixAI</span>
-                        </div>
+                        <div class="info"><img src="img/ex_moderation.png"><span>Modération</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/capcut.png">
-                            <span>CapCut</span>
-                        </div>
+                        <div class="info"><img src="img/ex_rp.png"><span>Univers RP</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/python.png">
-                            <span>Python</span>
-                        </div>
+                        <div class="info"><img src="img/ex_python.png"><span>Python</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/sqlite.png">
-                            <span>SQL</span>
-                        </div>
+                        <div class="info"><img src="img/ex_tk.png"><span>Applications Tkinter</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/html.png">
-                            <span>HTML</span>
-                        </div>
+                        <div class="info"><img src="img/ex_sqlite.png"><span>SQL</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/css.png">
-                            <span>CSS</span>
-                        </div>
+                        <div class="info"><img src="img/ex_html.png"><span>HTML</span></div>
                     </div>
-
                     <div class="bar">
-                        <div class="info">
-                            <img src="img/js.png">
-                            <span>JavaScript</span>
-                        </div>
+                        <div class="info"><img src="img/ex_css.png"><span>CSS</span></div>
                     </div>
-
+                    <div class="bar">
+                        <div class="info"><img src="img/ex_js.png"><span>JavaScript</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><img src="img/ex_canva.jpg"><span>Canva</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><img src="img/ex_pixai.png"><span>PixAI</span></div>
+                    </div>
                 </div>
-
             </div>
+        </section>
 
+        <section class="pricing" id="pricing">
+            <h2 class="heading">Offres & <span>Tarifs</span></h2>
+            <div class="pricing-container">
+                <div class="price-card">
+                    <div class="price-header">
+                        <i class="fa-brands fa-discord"></i>
+                        <h3>Bot Discord Essential</h3>
+                        <span>À partir de</span>
+                        <h2>79 €</h2>
+                    </div>
+                    <p class="description">Parfait pour les petites communautés.</p>
+                    <ul>
+                        <li>✔ 10 Slash Commands</li>
+                        <li>✔ Commandes d'information</li>
+                        <li>✔ Messages automatiques</li>
+                        <li>✔ Configuration de base</li>
+                        <li>✔ Avatar personnalisé</li>
+                        <li>✔ Support 7 jours</li>
+                    </ul>
+                    <a href="#contact" class="btn">Commander</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <i class="fa-brands fa-discord"></i>
+                        <h3>Bot Discord Premium</h3>
+                        <span>À partir de</span>
+                        <h2>179 €</h2>
+                    </div>
+                    <p class="description">La solution idéale pour les serveurs communautaires et les créateurs de contenu.</p>
+                    <ul>
+                        <li>✔ Jusqu'à 30 commandes</li>
+                        <li>✔ Base de données SQL</li>
+                        <li>✔ Logs</li>
+                        <li>✔ Intégration d'API externes</li>
+                        <li>✔ Interface d'administration simple</li>
+                        <li>✔ Support 30 jours</li>
+                    </ul>
+                    <a href="#contact" class="btn">Commander</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <i class="fa-brands fa-discord"></i>
+                        <h3>Bot Discord Ultimate</h3>
+                        <span>À partir de</span>
+                        <h2>350 €</h2>
+                    </div>
+                    <p class="description">Pour les projets ambitieux nécessitant un développement entièrement sur mesure.</p>
+                    <ul>
+                        <li>✔ Nombre de commandes illimité</li>
+                        <li>✔ Développement 100 % personnalisé</li>
+                        <li>✔ SQL avancé</li>
+                        <li>✔ API multiples</li>
+                        <li>✔ Gacha</li>
+                        <li>✔ Documentation</li>
+                        <li>✔ Support personnalisé</li>
+                    </ul>
+                    <a href="#contact" class="btn">Commander</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Création de serveur Discord</h3>
+                        <span>À partir de</span>
+                        <h2>69 €</h2>
+                    </div>
+                    <p class="description">Transformez votre idée en une communauté prête à accueillir vos membres.</p>
+                    <ul>
+                        <li>✔ Structure complète</li>
+                        <li>✔ Permissions</li>
+                        <li>✔ Emojis</li>
+                        <li>✔ Webhooks</li>
+                        <li>✔ Bots de base</li>
+                        <li>✔ Conseils d'organisation</li>
+                    </ul>
+                    <a href="#contact" class="btn">Commander</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <<i class="fa-solid fa-arrows-rotate"></i>
+                        <h3>Refonte de serveur Discord</h3>
+                        <span>À partir de</span>
+                        <h2>39 €</h2>
+                    </div>
+                    <p class="description">Modernisez votre serveur sans repartir de zéro.</p>
+                    <ul>
+                        <li>✔ Réorganisation des salons</li>
+                        <li>✔ Optimisation des rôles</li>
+                        <li>✔ Nettoyage</li>
+                        <li>✔ Nouvelle identité visuelle</li>
+                        <li>✔ Automatisation</li>
+                        <li>✔ Amélioration de l'expérience utilisateur</li>
+                    </ul>
+                    <a href="#contact" class="btn">Commander</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <h3>Illustration IA</h3>
+                        <span>À partir de</span>
+                        <h2>9 €</h2>
+                    </div>
+                    <p class="description">Illustrations personnalisées générées par intelligence artificielle.</p>
+                    <ul>
+                        <li>✔ Personnage original</li>
+                        <li>✔ Avatar</li>
+                        <li>✔ Style anime</li>
+                        <li>✔ Fond simple</li>
+                        <li>✔ Jusqu'à 5 variantes</li>
+                        <li>✔ Fond détaillé</li>
+                        <li>✔ Haute résolution</li>
+                        <li>✔ Version SFW ou NSFW</li>
+                    </ul>
+                    <a href="#contact" class="btn">Commander</a>
+                </div>
+                <div class="price-card"></div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Options supplémentaires</h3>
+                    </div>
+                    <p class="description">Ces options peuvent être proposées sur toutes les prestations.</p>
+                    <ul>
+                        <li>✔ Livraison prioritaire (48 h)</li>
+                        <li>➝ <span>+30 €</span></li>
+                        <li>✔ Maintenance mensuelle</li>
+                        <li>➝ <span>À partir de 20 €/mois</span></li>
+                        <li>✔ Documentation complète</li>
+                        <li>➝ <span>+20 €</span></li>
+                        <li>✔ Commandes supplémentaires</li>
+                        <li>➝ <span>+5 €/commande</span></li>
+                    </ul>
+                </div>
+                <div class="price-card"></div>
+            </div>
         </section>
 
         <section class="bots" id="bots">
-
             <h2 class="heading">Mes <span>Bots</span></h2>
-
             <div class="bot-container">
-
+                <div class="bot-box">
+                    <div class="bot-info">
+                        <h4>Lady Biscus</h4>
+                    </div>
+                    <div class="bot-card">
+                        <div class="font-side">
+                            <img src="img/bot_lady.png" alt="">
+                        </div>
+                        <div class="back-side">
+                            <p>Conçue et développée exclusivement pour la Scarlett Lounge, ce bot analyse les profils des membres à travers leurs rôles Discord afin d'évaluer leurs compatibilités et de proposer des affinités personnalisées.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="bot-box">
                     <div class="bot-info">
                         <h4>KimiBot</h4>
@@ -225,7 +318,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bot-box">
                     <div class="bot-info">
                         <h4>Aethelgard</h4>
@@ -239,7 +331,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bot-box">
                     <div class="bot-info">
                         <h4>Server Designer</h4>
@@ -253,7 +344,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bot-box">
                     <div class="bot-info">
                         <h4>Aetheria</h4>
@@ -267,15 +357,147 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+        </section>
 
+        <section class="deroulement" id="deroulement">
+            <h2 class="heading">Déroulement d'un <span>projet</span></h2>
+            <div class="timeline">
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Prise de contact</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Vous me présentez votre idée ou vos besoins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Analyse du projet</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Nous échangeons afin de définir les fonctionnalités, les délais et le budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Prototype</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Je vous propose un prototype détaillé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Triangle des prix</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Nous trouvons le meilleur équilibre entre qualité, rapidité et budget afin de définir une solution adaptée à votre projet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Validation et paiement</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Après votre validation, le paiement est effectué via Buy Me a Coffee et le développement peut commencer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Développement</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Je réalise votre projet en vous tenant informé de son avancement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Tests et ajustements</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Chaque fonctionnalité est testée et les éventuelles corrections sont apportées.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Livraison</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Vous recevez un projet prêt à être utilisé, accompagné des explications nécessaires.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Support</h2>
+                        </div>
+                        <div class="decs">
+                            <p>Je reste disponible après la livraison pour répondre à vos questions et corriger d'éventuels problèmes selon les modalités convenues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions" id="questions">
+            <h2 class="heading">Questions & Avis</h2>
+                <div class="questions-container">
+                    <div class="avis">
+                        <div class="person">
+                            <div class="person-img">
+                                <img src="img/av_kimi.jpg">
+                            </div>
+                            <div class="person-content">
+                                <h3>@princessekimi</h3>
+                                <p>Bot très simple d'utilisation et performant. Je m'en sers tous les jours sur mon serveur. En plus le dev reste disponible en cas de besoin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="quest">
+                            <h3>Combien de temps ?</h3>
+                            <p>Entre 2 jours et 2 semaines.</p>
+                        </div>
+                        <div class="quest">
+                            <h3>Puis-je demander une modification ?</h3>
+                            <p>Oui.</p>
+                        </div>
+                        <div class="quest">
+                            <h3>Travaillez-vous avec des serveurs NSFW ?</h3>
+                            <p>Oui, dans le respect des règles de Discord.</p>
+                        </div>
+                        <div class="quest">
+                            <h3>Puis-je avoir le code source ?</h3>
+                            <p>Oui.</p>
+                        </div>
+                        <div class="quest">
+                            <h3>Quels moyens de paiement acceptez-vous ?</h3>
+                            <p>Les paiements sont réalisés via Buy Me a Coffee, après validation du projet et accord entre les deux parties.</p>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section class="contact" id="contact">
-
             <h2 class="heading">Contactez <span>Moi</span></h2>
-
+            <p>Réponse sous 24h via une demande d'amis sur sur Discord.</p>
             <form id="contactForm">
                 <div class="input-box">
                     <input type="text" name="Nom" placeholder="Nom" required>
@@ -286,21 +508,23 @@
                 <textarea name="Message" cols="30" rows="10" placeholder="Corps du message"></textarea>
                 <input type="submit" value="Envoyer le message" class="btn">
             </form>
-
             <script src="js/form2discord.js"></script>
-
         </section>
 
         <footer class="footer">
-
             <ul class="list">
                 <li><a href="#">Accueil</a></li>
+                <li><a href="legal.html" target="_blank">Mentions Légales</a></li>
                 <li><a href="projet.html" target="_blank" rel="noopener noreferrer">Aetherius Legends</a></li>
                 <li><a href="https://discordpy.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Discord.py</a></li>
                 <li><a href="https://pixai.art/" target="_blank" rel="noopener noreferrer">PixAI</a></li>
             </ul>
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="Insérez un code ici...">
+                <button onclick="rediriger()">Entrer</button>
+            </div>     
+            <script src="js/codes.js"></script>
             <p class="copyright">© 2024-2026 Augustus Production - Tous droits réservés.</p>
-
         </footer>
 
         <script src="js/navbar.js"></script>
