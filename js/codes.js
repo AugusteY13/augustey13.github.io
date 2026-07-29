@@ -5,7 +5,8 @@ function rediriger() {
     let pages = {
         "dragon" : "interactive dragon.html",
         "smiley" : "smiley.html",
-        "seche" : "seche.html"
+        "seche" : "seche.html",
+        "karen2026" : "birthday-cake.html"
     };
 
     if (pages[valeur]) {
@@ -14,4 +15,3 @@ function rediriger() {
         alert("Page non trouvée !");
     }
 }
-
