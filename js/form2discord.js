@@ -1,7 +1,7 @@
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const webhookURL = "https://discord.com/api/webhooks/1480311332128428104/gO7F7NpQcwGUFQIJrm7AW8Y9fI1ZRLsI9FQpmZA4Brj8GhWH-Oyf9rHdqLtU1v7V_DZx";
+    const webhookURL = "https://discord.com/api/webhooks/1498267504194097262/5d5brNUFAf6vkn-dDrXni-tP5ujuIAqiAdkIEHUodQmN3ruAOnYBCk2GcjKm3kifHnab";
 
     const formData = new FormData(e.target);
 
@@ -12,23 +12,23 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
             color: 0x5865f2,
             fields: [
                 {
-                    name: "👤 Nom",
-                    value: formData.get("Nom") || "Non renseigné",
+                    name: "👤 Pseudo Discord",
+                    value: formData.get("Pseudo Discord") || "Non renseigné"
                 },
                 {
                     name: "📧 Email",
                     value: formData.get("Email") || "Non renseigné",
                 },
                 {
-                    name: "🎮 Pseudo Discord",
-                    value: formData.get("Pseudo Discord") || "Non renseigné"
+                    name: "📌 Type de projet",
+                    value: formData.get("Type de projet") || "Non renseigné"
                 },
                 {
-                    name: "📌 Objet",
-                    value: formData.get("Objet") || "Non renseigné"
+                    name: "💰 Budget approximatif",
+                    value: formData.get("Budget approximatif") || "Non renseigné",
                 },
                 {
-                    name: "💬 Message",
+                    name: "💬 Description du projet",
                     value: formData.get("Message") || "Aucun message"
                 }
             ],
