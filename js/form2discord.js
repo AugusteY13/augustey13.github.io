@@ -1,7 +1,7 @@
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const webhookURL = "https://discord.com/api/webhooks/1540332778787307581/_SzzqPJxsA0BIYehHjRp8OtyKTsxfiYRXzigSbKGp6feH9lJXzv_CYufUM4LQa8gyBRA";
+    const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
 
     const formData = new FormData(e.target);
 
